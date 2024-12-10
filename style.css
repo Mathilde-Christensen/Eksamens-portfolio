@@ -78,7 +78,7 @@ ul {
 .header__list {
     color: #F6EFE8;
     font-family: Poppins;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     font-style: normal;
     font-weight: 500;
     display: flex;
@@ -616,12 +616,12 @@ ul {
 
 
     .main__img {
-        width: 40%;
+        width: 50%;
     }
 
     .main__split {
         display: flex;
-        
+        align-items: center;
        }
 
     .main__text {
