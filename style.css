@@ -1,0 +1,657 @@
+*{
+    box-sizing: border-box; /* at padding og border bliver integreret i elementets samlede bredde og højde på hele siden, nemmer at arbejde med */
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #662507;
+}
+
+h1 {
+    font-family: Allura, serif;
+    color: #F6EFE8;
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h2 {
+    color: #F6EFE8;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    padding: 1rem;
+}
+
+h3 {
+    font-family: Allura, serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h4 {
+    color: #F6EFE8;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+p {
+    font-family: Poppins, sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    padding: 0rem 2rem;
+    color: #F6EFE8;
+}
+
+a {
+    text-decoration: none;
+    color: #F6EFE8;
+
+}
+
+a:hover {
+    color: #F29B72;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header__logo {
+    color: #F6EFE8;
+    font-family: Allura, serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.header__list {
+    color: #F6EFE8;
+    font-family: Poppins;
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3; /*headeren ligger sig foran videon fra heroen*/
+    padding: 2rem;
+}
+
+.hero {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero__video {  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    
+}
+
+.hero__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    opacity: 0.5; /*50% gennemsigtigt */
+}
+
+.hero__text {
+    grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  z-index: 1;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.main__img {
+    width: 100%;
+    padding: 2rem;
+    display: block
+}
+
+.main__h2 {
+    padding: 2rem;
+}
+
+.main__button {
+    color: #F6EFE8;
+    text-align: left;
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    padding: 2rem;
+}
+
+.main__split {
+    background-color: #F6EFE8;
+}
+
+.footer {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #662507;
+}
+
+.footer__button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem
+}
+
+.footer__logo {
+    color: #F6EFE8;
+    font-family: Allura, serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.footer__mail {
+    color: #F6EFE8;
+    font-family: Poppins;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mail__button {
+    padding: 1rem;
+}
+
+
+.footer__telefon {
+    color: #F6EFE8;
+    font-family: Poppins;
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer__icon {
+   font-size: 1rem;
+}
+
+/*"forside" spisifikationer*/
+
+.h2__forside {
+    color: #662507;
+}
+
+.p__forside {
+    color: #662507;
+}
+
+.button__forside {
+    color: #662507;
+}
+
+/*"om mig" spisifikationer*/
+
+.split__om-mig {
+    color: #662507;
+    background-color: #F6EFE8;
+}
+
+.p__om-mig {
+    color: #662507;
+    padding: 1rem;
+}
+
+.button__om-mig {
+    color: #662507;
+    text-align: center;
+}
+
+
+/*"portfolio" spisifikationer*/
+/*"portfolio mad foto" spisifikationer*/
+
+.mad-foto__h3 {
+    color: #F6EFE8;
+    padding: 2rem 2rem 0rem 2rem;
+}
+
+.mad-foto__1 {
+    width: 31%;
+}
+
+.mad-foto__2 {
+    width: 31%;
+}
+
+.mad-foto__3 {
+    width: 31%;
+}
+
+.mad-foto__img {
+    padding: 1rem 2rem 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*"portfolio bolgastro event" spisifikationer*/
+
+.bolgastro-event__video {
+    width: 100%;
+}
+
+.main__bolgastro-event {
+    background-color: #F6EFE8;
+    padding: 2rem;
+}
+
+.bolgastro-event__p {
+    color: #662507;
+    padding: 0rem;
+}
+
+.bolgastro-event__h3 {
+    color: #662507;
+    padding: 0rem ;
+}
+
+/*"portfolio frankrig retrat" spisifikationer*/
+
+.frankrig-reatret-video {
+    width: 100%;
+}
+
+.main__frankrig-retret {
+    padding: 2rem;
+}
+
+.frankrig-retret__p {
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+.frankrig-retret__h3 {
+    padding: 0rem;
+    color: #F6EFE8;
+}
+
+/*"portfolio animation af maleri" spisifikationer*/
+
+.animation-af-maleri__video {
+    width: 100%;
+}
+
+.main__animation-af-maleri {
+    padding: 2rem;
+    background-color: #F6EFE8;
+}
+
+.animation-af-maleri__p {
+    color: #662507;
+    padding: 0rem;
+}
+
+.animation-af-maleri__h3 {
+    color: #662507;
+}
+
+.kontakt__button-mail {
+    color: #662507;
+}
+
+/*"portfolio animation af skoleskib" spisifikationer*/
+
+.sprite {
+    width: 400px;
+    height: 400px;
+    background: url('billeder-og-film/animation.webp') 0 0 no-repeat;
+    animation: play 3s steps(8) infinite;
+}
+
+@keyframes play {
+    0% { background-position: 0px;}
+    100% { background-position: -3200px;}
+}
+
+.animation-af-skoleskib__animation {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+.animation-af-skoleskib__h3 {
+    color: #F6EFE8;
+    padding: 2rem 0rem 0rem 2rem;
+}
+
+/*"portfolio selvprotrat-illistrator" spisifikationer*/
+
+.main__selvprotrat-illistrator {
+    background-color: #F6EFE8;
+    padding: 2rem;
+}
+
+.selvpotrat-illustrater__img {
+    width: 100%;
+}
+
+.selvpotrat-illustrater__h3 {
+    color: #662507;
+}
+
+.selvpotrat-illustrater__p {
+    color: #662507;
+    padding: 0rem;
+}
+
+/*"portfolio produktfoto" spisifikationer*/
+
+.produktfoto__img {
+    width: 100%;
+}
+
+.main__produktfoto {
+    padding: 2rem;
+}
+
+.produktfoto__h3 {
+    color: #F6EFE8;
+}
+
+.produktfoto__p {
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+/*"kontakt side" spisifikationer*/
+
+.kontakt__img {
+    width: 100%;
+}
+
+.main__kontakt {
+    background-color: #F6EFE8;
+    padding: 2rem;
+}
+
+.kontakt__h3 {
+    color: #662507;
+    padding: 1rem 0rem;
+}
+
+.kontakt__mail {
+    color: #662507;
+    font-family: Poppins, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.kontakt__button-mail {
+    gap: 2rem;
+}
+
+.kontakt__telefon {
+    display: flex;
+    align-items: center;
+}
+
+.kontakt__telefon-p {
+    color: #662507;
+    padding: 0rem;
+}
+
+.kontakt__sociale-medier-p {
+    color: #662507;
+    padding: 2rem 0rem 2rem 1rem;
+    font-size: larger;
+    font-weight: 400;
+}
+
+.kontakt__icon {
+    color: #662507;
+    font-size: 2rem;
+}
+
+.kontakt__icon:hover {
+    color: #F29B72;
+}
+
+.kontakt__icon {
+    padding: 1rem;
+}
+
+
+
+
+@media only screen and (min-width: 550px) {
+    h1 {
+        font-size: 5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 3rem;
+    }
+    
+    h4 {
+        font-size: 1rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+
+    .header__list {
+        font-size: 1rem;
+    }
+
+    .header__logo {
+        font-size: 2rem;
+    }
+
+    .footer__logo {
+        font-size: 2rem;
+    }
+
+    .footer__icon {
+        font-size: 2rem;
+     }
+
+    /*"portfolio bolgastro event" spisifikationer*/
+
+    .bolgastro-event__video {
+        width: 31%;
+    }
+        
+    .main__bolgastro-event {
+        display: flex;
+    }
+    
+    .bolgastro-event__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 0rem 0rem 2rem;
+    }
+
+    /*"portfolio frankrig" spisifikationer*/
+
+    .frankrig-reatret-video {
+        width: 31%;
+    }
+
+    .main__frankrig-retret {
+        display: flex;
+    }
+
+    .frankrig-reatret__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 2rem 0rem 0rem;
+    }
+
+    /*"portfolio animation af maleri" spisifikationer*/
+    
+    .animation-af-maleri__video {
+        width: 62%;
+    }
+
+    .main__animation-af-maleri {
+        display: flex;
+    }
+
+    .animation-af-maleri__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 0rem 0rem 2rem;
+    }
+
+    /*"portfolio animation af skoleskib" spisifikationer*/
+
+    .main__animation-af-skoleskib {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .animation-af-skoleskib__animation {
+        display: flex;
+        justify-content: flex-end;
+        padding: 2rem 0rem;
+    }
+
+    .animation-af-skoleskib__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 2rem 0rem 0rem;
+    }
+
+    .animation-af-skoleskib__h3 {
+        padding: 0rem;
+    }
+
+    .animation-af-skoleskib__p {
+        padding: 0rem;
+    }
+
+    /*"portfolio selvprotrat-illistrator" spisifikationer*/
+
+    .selvpotrat-illustrater__img {
+        width: 62%;
+    }
+
+    .main__selvprotrat-illistrator {
+        display: flex;
+    }
+
+    .selvpotrat-illustrater__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 0rem 0rem 2rem;
+    }
+
+    /*"portfolio produktfoto" spisifikationer*/
+
+    .produktfoto__img {
+        width: 62%;
+        padding: 0rem;
+    }
+
+    .main__produktfoto {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .produktfoto__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 2rem 0rem 0rem;
+    }
+
+}
+
+@media only screen and (min-width: 1030px) {
+    h1 {
+        font-size: 9rem;
+    }
+
+
+    .main__img {
+        width: 40%;
+    }
+
+    .main__split {
+        display: flex;
+        
+       }
+
+    .main__text {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .text__om-mig {
+        display: flex;
+        justify-content: center;
+    } 
+
+    .main__h2 {
+        display: flex;
+        align-items: center; 
+    }
+
+     /*"kontakt" spisifikationer*/
+     .kontakt__img {
+        width: 50%;
+    }
+
+    .kontakt_split {
+        display: flex;
+    }
+
+    .kontakt__text {
+        padding: 0rem 0rem 0rem 1rem;
+    }
+    
+}
+
