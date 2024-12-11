@@ -191,7 +191,7 @@ ul {
 }
 
 .mail__button {
-    padding: 1rem;
+    padding: 2rem;
 }
 
 
@@ -237,6 +237,11 @@ ul {
 }
 
 .button__om-mig {
+    color: #662507;
+    text-align: center;
+}
+
+.button__om-mig-kontakt {
     color: #662507;
     text-align: center;
 }
@@ -630,10 +635,17 @@ ul {
         
     }
 
+    .button__om-mig-kontakt {
+        color: #662507;
+        text-align: left;
+        padding: 2rem 0.5rem;
+    }
+
     .text__om-mig {
         display: flex;
         justify-content: center;
-    } 
+    }
+
 
     .main__h2 {
         display: flex;
