@@ -216,6 +216,7 @@ ul {
     color: #662507;
 }
 
+
 .p__forside {
     color: #662507;
 }
@@ -615,10 +616,14 @@ ul {
 }
 
 @media only screen and (min-width: 1030px) {
+    
     h1 {
         font-size: 9rem;
     }
-
+    
+    .main {
+        padding: 2rem 0rem 0rem 0rem;
+    }
 
     .main__img {
         width: 50%;
