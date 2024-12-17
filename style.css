@@ -622,7 +622,7 @@ ul {
     }
     
     .main {
-        padding: 2rem 0rem 0rem 0rem;
+        padding: 5rem 0rem 0rem 0rem;
     }
 
     .main__img {
@@ -638,6 +638,10 @@ ul {
         display: flex;
         flex-direction: column;
         
+    }
+
+    .main__kontakt {
+        padding: 5rem 2rem 2rem 2rem;
     }
 
     .button__om-mig-kontakt {
